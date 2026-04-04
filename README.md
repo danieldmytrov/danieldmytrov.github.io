@@ -1,1 +1,1 @@
-# danieldmytrov.github.io
+# dmytrov.de
