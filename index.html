@@ -532,7 +532,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid rgba(255,255,255,0.06
       <p style="color:rgba(255,255,255,0.6);margin-bottom:0.75rem">Du bist Investor, Bankpartner, Franchise-Interessent oder willst gemeinsam etwas aufbauen? Ich bin offen für Gespräche, die Substanz haben.</p>
       <p style="color:rgba(255,255,255,0.3);font-size:0.85rem;margin-top:0.5rem">Daniel Dmytrov · Hannover, Deutschland · dmytrov.de</p>
       <div class="contact-links">
-        <a href="/cdn-cgi/l/email-protection#5b3f3a35323e371b3f36222f29342d753f3e" class="btn btn-primary"><span class="__cf_email__" data-cfemail="284c4946414d44684c45515c5a475e064c4d">[email&#160;protected]</span></a>
+        <a href="mailto:daniel@dmytrov.de" class="btn btn-primary">daniel@dmytrov.de</a>
         <a href="https://www.linkedin.com/in/danieldmytrov" target="_blank" rel="noopener" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.2)">LinkedIn</a>
       </div>
     </div>
@@ -540,10 +540,10 @@ footer{text-align:center;padding:2rem;border-top:1px solid rgba(255,255,255,0.06
 </section>
 
 <footer>
-  <p>© 2025 Daniel Dmytrov · Hannover · Alle Rechte vorbehalten · <a href="/cdn-cgi/l/email-protection#0367626d6a666f43676e7a77716c752d6766" style="color:rgba(255,255,255,0.2);text-decoration:none"><span class="__cf_email__" data-cfemail="2b4f4a45424e476b4f46525f59445d054f4e">[email&#160;protected]</span></a></p>
+  <p>© 2025 Daniel Dmytrov · Hannover · <a href="/impressum.html" style="color:rgba(255,255,255,0.4);text-decoration:none">Impressum</a> · <a href="/datenschutz.html" style="color:rgba(255,255,255,0.4);text-decoration:none">Datenschutz</a> · <a href="mailto:daniel@dmytrov.de" style="color:rgba(255,255,255,0.2);text-decoration:none">daniel@dmytrov.de</a></p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const canvas = document.getElementById('bg-canvas');
 const ctx = canvas.getContext('2d');
 let W, H, orbs=[], lines=[];
@@ -590,4 +590,9 @@ animate();
 window.addEventListener('resize',resize);
 
 const observer=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{ if(e.isIntersecting) e.target.querySelectorAll('.skill-fill').forEach(b=>{b.style.width=
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.querySelectorAll('.skill-fill').forEach(b=>{b.style.width=b.dataset.width+'%'});});
+},{threshold:0.3});
+document.querySelectorAll('.skills-layout').forEach(s=>observer.observe(s));
+</script>
+</body>
+</html>
