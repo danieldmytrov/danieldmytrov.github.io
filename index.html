@@ -68,7 +68,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 /* SECTIONS */
 section{padding:6rem 5vw;position:relative;z-index:1}
 .section-tag{font-size:0.85rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--orange);margin-bottom:1.2rem}
-.section-title{font-family:var(--serif);font-size:clamp(1.8rem,4.2vw,3.6rem);font-weight:700;line-height:1.15;margin-bottom:1.8rem;color:var(--text)}
+.section-title{font-family:var(--serif);font-size:clamp(2.4rem,4.2vw,3.6rem);font-weight:700;line-height:1.1;margin-bottom:1.8rem;color:var(--text)}
 .section-body{font-size:1.15rem;color:var(--text2);max-width:680px;line-height:2.05}
 
 /* ABOUT */
@@ -87,18 +87,18 @@ section{padding:6rem 5vw;position:relative;z-index:1}
 .value-card:hover .value-icon-wrap svg{stroke:var(--orange)}
 .value-icon-wrap{width:36px;height:36px;margin-bottom:0.8rem;position:relative;z-index:1}
 .value-icon-wrap svg{width:36px;height:36px;stroke:var(--text2);stroke-width:1.5;fill:none;transition:stroke 0.3s}
-.value-title{font-size:0.88rem;font-weight:700;margin-bottom:0.4rem;color:var(--text);transition:color 0.3s;position:relative;z-index:1;word-break:break-word;hyphens:auto}
-.value-desc{font-size:0.82rem;color:var(--text3);position:relative;z-index:1;line-height:1.5}
+.value-title{font-size:1rem;font-weight:700;margin-bottom:0.4rem;color:var(--text);transition:color 0.3s;position:relative;z-index:1}
+.value-desc{font-size:0.92rem;color:var(--text3);position:relative;z-index:1}
 
 /* STATS BAR */
 .stats-bar{background:var(--dark);padding:3.5rem 5vw}
 .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;max-width:1000px;margin:0 auto;text-align:center}
-.stats-item{padding:1.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.stats-big{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:700;color:var(--orange);display:block;margin-bottom:0.4rem;line-height:1.1}
-.stats-label{font-size:0.75rem;color:rgba(255,255,255,0.5);letter-spacing:0.1em;text-transform:uppercase;line-height:1.4}
+.stats-item{padding:1.5rem}
+.stats-big{font-family:var(--serif);font-size:2.5rem;font-weight:700;color:var(--orange);display:block;margin-bottom:0.4rem}
+.stats-label{font-size:0.75rem;color:rgba(255,255,255,0.5);letter-spacing:0.1em;text-transform:uppercase}
 
 /* COMPANIES */
-.companies-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.companies-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3rem}
 .company-card{background:#fff;border:1px solid var(--border);border-radius:1.25rem;padding:2rem;transition:all 0.3s;position:relative;overflow:hidden}
 .company-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform 0.3s}
 .company-card:hover{box-shadow:0 8px 40px rgba(0,0,0,0.08);transform:translateY(-4px)}
@@ -175,17 +175,11 @@ footer{text-align:center;padding:2rem;border-top:1px solid rgba(255,255,255,0.06
   .hero-stats{justify-content:center}
   .about-grid,.dimy-grid,.vision-grid,.skills-layout{grid-template-columns:1fr;gap:2.5rem}
   .companies-grid,.lifestyle-grid{grid-template-columns:1fr}
-  .stats-row{grid-template-columns:1fr 1fr;gap:0}
-  .stats-item{padding:1.8rem 1rem;min-height:110px}
+  .stats-row{grid-template-columns:1fr 1fr}
   .nav-links{display:none}
   .hero-sub{margin:0 auto 2.5rem}
   .hero-cta{justify-content:center}
   .value-grid{grid-template-columns:1fr 1fr}
-}
-@media(max-width:480px){
-  .value-grid{grid-template-columns:1fr 1fr}
-  .value-card{padding:1rem 0.85rem}
-  .stats-row{grid-template-columns:1fr 1fr}
 }
 
 /* ABSTRACT DECORATIVE ELEMENTS */
@@ -405,7 +399,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid rgba(255,255,255,0.06
   <div class="corner-accent" style="bottom:2rem;right:5vw;"><svg width="100" height="60" viewBox="0 0 100 60" fill="none"><circle cx="50" cy="30" r="28" stroke="rgba(232,98,26,0.08)" stroke-width="1.5" stroke-dasharray="6 4"/></svg></div>
   <div class="section-tag">Unternehmen & Marken</div>
   <h2 class="section-title">Was ich aufgebaut habe</h2>
-  <p class="section-body">Drei Unternehmen, fünf eingetragene Marken: H2O Ioniq, NoChemix, Alltagshilfe, Fensterputz-Service und Cleito Clothing. Ein gemeinsamer Kern: Qualität, Verlässlichkeit und dem Anspruch, besser zu sein als das, was der Markt erwartet.</p>
+  <p class="section-body">Vier Unternehmen, fünf eingetragene Marken: H2O Ioniq, NoChemix, Alltagshilfe, Fensterputz-Service und Cleito Clothing. Ein gemeinsamer Kern: Qualität, Verlässlichkeit und dem Anspruch, besser zu sein als das, was der Markt erwartet.</p>
   <div class="companies-grid">
     <div class="company-card">
       <div class="company-logo-wrap">
@@ -433,6 +427,15 @@ footer{text-align:center;padding:2rem;border-top:1px solid rgba(255,255,255,0.06
       <div class="company-name">NoChemix Cleaning</div>
       <p class="company-desc">Reinigen ohne Chemie: das ist der Kern dieser Marke. NoChemix steht für einen bewussteren Umgang mit Ressourcen ohne Abstriche bei der Leistung. Eine Marke mit Haltung und klarem Skalierungspotenzial.</p>
       <a href="https://www.nochemix.de" target="_blank" rel="noopener" class="btn-company">Website besuchen →</a>
+    </div>
+    <div class="company-card" style="border:2px dashed var(--border);background:var(--bg2);opacity:0.85">
+      <div class="company-logo-wrap" style="align-items:center;">
+        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="26" cy="26" r="24" stroke="var(--orange)" stroke-width="1.5" stroke-dasharray="5 3"/><path d="M18 26h16M26 18v16" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <div class="company-badge" style="background:var(--bg3);color:var(--text3);border-color:var(--border)">Coming Soon</div>
+      <div class="company-name" style="color:var(--text2)">Alltagshilfe Braunschweig UG</div>
+      <p class="company-desc">Die Expansion des bewährten Alltagshilfe-Konzepts in die Region Braunschweig. Gleiche Werte, neuer Standort, mehr Reichweite.</p>
+      <span style="display:inline-block;margin-top:1rem;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange)">In Gründung</span>
     </div>
   </div>
 </section>
@@ -538,7 +541,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid rgba(255,255,255,0.06
       <p style="color:rgba(255,255,255,0.6);margin-bottom:0.75rem">Du bist Investor, Bankpartner, Franchise-Interessent oder willst gemeinsam etwas aufbauen? Ich bin offen für Gespräche, die Substanz haben.</p>
       <p style="color:rgba(255,255,255,0.3);font-size:0.85rem;margin-top:0.5rem">Daniel Dmytrov · Hannover, Deutschland · dmytrov.de</p>
       <div class="contact-links">
-        <a href="/cdn-cgi/l/email-protection#096d6867606c65496d64707d7b667f276d6c" class="btn btn-primary"><span class="__cf_email__" data-cfemail="0f6b6e61666a634f6b62767b7d6079216b6a">[email&#160;protected]</span></a>
+        <a href="mailto:daniel@dmytrov.de" class="btn btn-primary">daniel@dmytrov.de</a>
         <a href="https://www.linkedin.com/in/danieldmytrov" target="_blank" rel="noopener" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.2)">LinkedIn</a>
       </div>
     </div>
@@ -546,10 +549,10 @@ footer{text-align:center;padding:2rem;border-top:1px solid rgba(255,255,255,0.06
 </section>
 
 <footer>
-  <p>© 2025 Daniel Dmytrov · Hannover · <a href="/impressum.html" style="color:rgba(255,255,255,0.4);text-decoration:none">Impressum</a> · <a href="/datenschutz.html" style="color:rgba(255,255,255,0.4);text-decoration:none">Datenschutz</a> · <a href="/cdn-cgi/l/email-protection#c8aca9a6a1ada488aca5b1bcbaa7bee6acad" style="color:rgba(255,255,255,0.2);text-decoration:none"><span class="__cf_email__" data-cfemail="c9ada8a7a0aca589ada4b0bdbba6bfe7adac">[email&#160;protected]</span></a></p>
+  <p>© 2025 Daniel Dmytrov · Hannover · <a href="/impressum.html" style="color:rgba(255,255,255,0.4);text-decoration:none">Impressum</a> · <a href="/datenschutz.html" style="color:rgba(255,255,255,0.4);text-decoration:none">Datenschutz</a> · <a href="mailto:daniel@dmytrov.de" style="color:rgba(255,255,255,0.2);text-decoration:none">daniel@dmytrov.de</a></p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const canvas = document.getElementById('bg-canvas');
 const ctx = canvas.getContext('2d');
 let W, H, orbs=[], lines=[];
@@ -591,4 +594,14 @@ class Line{
 resize();
 for(let i=0;i<8;i++) orbs.push(new Orb());
 for(let i=0;i<18;i++) lines.push(new Line());
-function animate(){ ctx.clearRect(0,0,W,H); orbs.forEach(o=>o.draw()); lines.forEach(l=>l.draw()); requestAnimationFrame(animate)
+function animate(){ ctx.clearRect(0,0,W,H); orbs.forEach(o=>o.draw()); lines.forEach(l=>l.draw()); requestAnimationFrame(animate); }
+animate();
+window.addEventListener('resize',resize);
+
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.querySelectorAll('.skill-fill').forEach(b=>{b.style.width=b.dataset.width+'%'});});
+},{threshold:0.3});
+document.querySelectorAll('.skills-layout').forEach(s=>observer.observe(s));
+</script>
+</body>
+</html>
